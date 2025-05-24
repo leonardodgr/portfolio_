@@ -1,0 +1,480 @@
+/* Reset básico e fonte padrão */
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do corpo */
+body {
+    background-color: #004643;
+    color: #e0e0e0;
+}
+
+/* Container principal */
+.xbox {
+    padding: 0px 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+    background-color: #004643;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #001e1d;
+    padding: 10px 25px;
+    gap: 10px;
+}
+
+.a1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.a1-logo {
+    width: 68px;
+    height: 68px;
+}
+
+.a1 a {
+    color: #f9bc60;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.a1 a:hover {
+    color: #e16162;
+}
+
+/* Sessões principais */
+.section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 150px;
+    padding: 10px 20px 75px;
+    border-bottom: 1px solid #001e1d;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px 80px 90px;
+    background-color: #0f3433;
+    border-radius: 6px;
+    border-top: 1px solid #001e1d;
+    border-bottom: 1px solid #001e1d;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #fffffe;
+}
+
+/* Caixa de texto e imagem */
+.box-1 {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 100%;
+}
+
+.box-2 {
+    width: 100%;
+    background-color: #004643;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 60px;
+    height: 100%;
+}
+
+.box-2-img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.box-2:hover .box-2-img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+/* Grade de ícones/skills */
+.grade-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Item individual de skill */
+.box-3 {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box-3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.box-3:hover::after {
+    border-color: #f9bc60;
+    box-shadow: 0 0 8px #f9bc60;
+}
+
+.box-3 img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.box-3 img:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+}
+
+.tech-label {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f9bc60;
+}
+
+/* Títulos e textos */
+h1,
+h2,
+h3 {
+    color: #fffffe;
+}
+
+.h2-box-1 {
+    font-size: 3.5rem;
+}
+
+.p-box-1 {
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #abd1c6;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.sobrenome {
+    color: #e16162;
+}
+
+/* Botões */
+button,
+.button-link {
+    color: #001e1d;
+    background-color: #f9bc60;
+    border: none;
+    width: 300px;
+    height: 65px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: left;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    padding-top: 6px;
+}
+
+button:hover,
+.button-link:hover {
+    transform: scaleX(1.1);
+}
+
+/* Seção de projetos */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 1px solid #f9bc60;
+    border-bottom: 1px solid #f9bc60;
+    padding: 30px;
+    background-color: #0f3433;
+    flex-wrap: wrap;
+    margin-bottom: 59px;
+    gap: 30px;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 65px;
+}
+
+.box-projeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #e16162;
+    margin: 0 5px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 2px;
+}
+
+.projeto h5 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #f9bc60;
+}
+
+.projeto p {
+    margin-bottom: 44px;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens de projetos com borda animada */
+.print {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+.print::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: conic-gradient(from 0deg, #f9bc60, #e16162, #f9bc60);
+    border-radius: 10px;
+    z-index: 0;
+    animation: rotateBorder 6s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.print:hover::before {
+    opacity: 1;
+}
+
+.print img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.print:hover img {
+    transform: scale(1.03);
+}
+
+/* Animação de rotação para borda */
+@keyframes rotateBorder {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #001e1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f9bc60;
+    border-radius: 10px;
+    border: 2px solid #001e1d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e16162;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .box-1,
+    .box-2 {
+        max-width: 100%;
+        padding: 0;
+        height: auto;
+    }
+
+    .box-2-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grade-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .button-link {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.projeto a {
+    display: inline-block;
+    color: #f9bc60;
+    background-color: transparent;
+    border: 2px solid #f9bc60;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.projeto a:hover {
+    background-color: #f9bc60;
+    color: #001e1d;
+    transform: scale(1.05);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fffffe;
+    font-weight: 700;
+    margin-bottom: 0;
+    position: relative;
+    cursor: default;
+}
+
+/* Linha sublinhada animada */
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #e16162;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.section-title:hover::after {
+    width: 160px;
+}
+
+.h2-box-1 {
+    font-size: 3.5rem;
+    color: #fffffe;
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: fadeInLeft 1s ease-out forwards;
+    animation-delay: 0.3s;
+    /* opcional */
+}
+
+/* Keyframes: animação vindo da esquerda */
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-3 h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #fffffe;
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.section-3 h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #f9bc60;
+    transition: width 0.4s ease;
+}
+
+.section-3 h1:hover::after {
+    width: 100%;
+}
