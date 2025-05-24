@@ -33,10 +33,3 @@ Meu nome é Leonardo Gross, estudante de Análise e Desenvolvimento de Sistemas 
 - `/js/` — scripts JavaScript (se houver)
 
 ---
-
-## Como executar localmente
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/leonardodgr/portfolio_.git
