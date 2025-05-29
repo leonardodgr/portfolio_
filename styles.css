@@ -15,7 +15,7 @@ body {
 /* Container principal */
 .xbox {
     padding: 0px 20px;
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 1200px;
     width: 90%;
     display: flex;
@@ -43,6 +43,7 @@ body {
 .a1-logo {
     width: 68px;
     height: 68px;
+    border-radius: 20px;
 }
 
 .a1 a {
@@ -98,13 +99,13 @@ body {
 
 .box-2 {
     width: 100%;
+    height: 100%;
     background-color: #004643;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     right: 60px;
-    height: 100%;
 }
 
 .box-2-img {
@@ -257,21 +258,23 @@ button:hover,
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border: 1px solid #e16162;
+    /* border: 1px solid #e16162; */
     margin: 0 5px;
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 2px;
+    background-color: #abd1c6;
 }
 
 .projeto h5 {
     margin-bottom: 20px;
     font-size: 1.3rem;
-    color: #f9bc60;
+    color: #001e1d;
 }
 
 .projeto p {
     margin-bottom: 44px;
+    color: #001e1d;
 }
 
 .projeto:hover {
@@ -287,6 +290,7 @@ button:hover,
     padding: 5px;
     background: transparent;
     transition: transform 0.3s ease;
+    margin-top: 15px;
 }
 
 .print::before {
@@ -392,9 +396,9 @@ button:hover,
 
 .projeto a {
     display: inline-block;
-    color: #f9bc60;
+    color: #001e1d;
     background-color: transparent;
-    border: 2px solid #f9bc60;
+    border: 2px solid #001e1d;
     padding: 10px 18px;
     border-radius: 6px;
     text-decoration: none;
@@ -477,4 +481,64 @@ button:hover,
 
 .section-3 h1:hover::after {
     width: 100%;
+}
+
+.footer-home-pg {
+    width: 100%;
+    background-color: #0f3433;
+    color: #abd1c6;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+.footer-home-pg .footer-icons {
+    margin-top: 15px;
+}
+
+.footer-home-pg .footer-icons a {
+    color: #e16162;
+    margin: 0 10px;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.footer-home-pg .footer-icons a:hover {
+    color: #f9bc60;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.grade-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 150px 0 150px;
+}
+
+.tooper {
+    background-color: #abd1c6;
+    border-radius: 90%;
+    width: 100%;
+    height: 10px;
+}
+
+.projeto {
+  width: 100%; /* ou um valor fixo como 300px se desejar */
+  max-width: 400px; /* para limitar largura */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.conteudo p {
+  word-break: break-word;
 }
