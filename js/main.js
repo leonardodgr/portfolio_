@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".a1-logo", {
